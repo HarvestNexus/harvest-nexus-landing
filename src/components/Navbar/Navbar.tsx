@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
           </div> 
           <span className="font-bold ">+23481-21766402</span>
         </div>
-        <button className="hidden lg:inline-block bg-primary rounded-full sm:p-2 md:p-2 text-white">Contact with Us</button>
+        <button className="hidden lg:inline-block bg-primary rounded-full sm:p-2 md:p-2 text-white text-sm">Join Our Early Access</button>
 
           {/* Mobile Hamburger */}
           <div className="lg:hidden">
