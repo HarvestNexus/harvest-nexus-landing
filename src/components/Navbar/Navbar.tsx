@@ -9,23 +9,28 @@ export const Navbar: React.FC = () => {
   const closeMenu = () => setIsMobileOpen(false);
 
   return (
-    <nav className="bg-white shadow sticky top-0 z-50">
+    <nav className="bg-white  sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+       
           <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold">HarvestHub</span>
+            <img
+              src="/images/logo.jpg"
+              alt="HarvestHub Logo"
+              className="w-12 h-12 object-contain rounded-full"
+            />
+            <span className="text-xl font-bold">Harvest Nexus</span>
           </div>
 
-          {/* Desktop Nav */}
-          <div className="hidden lg:flex space-x-8">
-            <NavLink href="/" label="Home" />
-            <NavLink href="/about" label="About" />
-            <NavLink href="/services" label="Service" />
-            <NavLink href="/contact" label="Blog" />
+          
+          <div className="hidden lg:flex space-x-8 ">
+            <NavLink className="text-gray-800 hover:text-green-600" href="/" label="Home" />
+            <NavLink className="text-gray-800 hover:text-green-600" href="/about" label="About" />
+            <NavLink className="text-gray-800 hover:text-green-600" href="/services" label="Service" />
+            <NavLink className="text-gray-800 hover:text-green-600" href="/contact" label="Blog" />
           </div>
 
-          {/* Desktop Contact */}
+       
           <div className="hidden md:hidden lg:inline-flex items-center space-x-2">
             <div className="bg-green-500 rounded-full p-2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" className="w-6 h-6">
@@ -35,12 +40,12 @@ export const Navbar: React.FC = () => {
             <span className="font-bold text-sm">+23481-21766402</span>
           </div>
 
-          {/* Desktop CTA Button */}
+         
           <button className="hidden lg:inline-block bg-green-600 hover:bg-green-700 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
-            Join Our Early Access
+            Join Early Access
           </button>
 
-          {/* Mobile Hamburger */}
+         
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
@@ -54,7 +59,7 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+  
       {isMobileOpen && (
         <div className="lg:hidden px-4 pt-2 pb-4 bg-white shadow-md space-y-3">
           <NavLink
@@ -94,7 +99,7 @@ export const Navbar: React.FC = () => {
           </div>
 
           <button className="w-full mt-3 bg-green-600 hover:bg-green-700 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
-            Join Our Early Access
+            Join Early Access
           </button>
         </div>
       )}
