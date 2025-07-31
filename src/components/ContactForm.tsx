@@ -2,19 +2,20 @@ import { useState, FormEvent, ChangeEvent } from "react";
 import { FaXTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
 interface FormData {
-  firstName: string;
-  lastName: string;
+  Name: string;
   email: string;
   phone: string;
+   Address: string;
   message: string;
+  
 }
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
-    firstName: "",
-    lastName: "",
+    Name: "",
     email: "",
     phone: "",
+    Address: "",
     message: ""
   });
 
@@ -32,7 +33,7 @@ export default function ContactForm() {
   return (
     <div className="min-h-screen bg-white px-4 py-12 flex flex-col items-center">
       <h1 className="text-4xl font-semibold mb-8 text-center">
-        Get in Touch With Us
+       Contact Us
       </h1>
 
       <div className="flex flex-col lg:flex-row gap-10 w-full max-w-6xl bg-gray-100 rounded-2xl shadow-md p-8">
@@ -82,23 +83,22 @@ export default function ContactForm() {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
-              name="firstName"
+              name="Name"
               type="text"
-              placeholder="First Name"
+              placeholder="Name"
               className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-              value={formData.firstName}
+              value={formData.Name}
               onChange={handleChange}
               required
             />
 
-            <input
-              name="lastName"
-              type="text"
-              placeholder="Last Name"
+                <input
+              name="phone"
+              type="tel"
+              placeholder="Phone Number"
               className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-              value={formData.lastName}
+              value={formData.phone}
               onChange={handleChange}
-              required
             />
 
             <input
@@ -110,16 +110,14 @@ export default function ContactForm() {
               onChange={handleChange}
               required
             />
-
-            <input
-              name="phone"
-              type="tel"
-              placeholder="Phone Number"
+                <input
+              name="Address"
+              type="text"
+              placeholder="Address"
               className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-              value={formData.phone}
+              value={formData.Address}
               onChange={handleChange}
             />
-
             <textarea
               name="message"
               rows={4}
