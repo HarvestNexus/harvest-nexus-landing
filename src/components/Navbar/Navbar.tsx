@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "./NavLink";
-import { MobileMenu } from "./MobileMenu";
 
 export const Navbar: React.FC = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -27,7 +26,7 @@ export const Navbar: React.FC = () => {
             <NavLink className="text-gray-800 hover:text-green-600" href="/" label="Home" />
             <NavLink className="text-gray-800 hover:text-green-600" href="/about" label="About" />
             <NavLink className="text-gray-800 hover:text-green-600" href="/services" label="Service" />
-            <NavLink className="text-gray-800 hover:text-green-600" href="/contact" label="Blog" />
+            <NavLink className="text-gray-800 hover:text-green-600" href="/contact" label="Contact Us" />
           </div>
 
        
