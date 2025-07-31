@@ -98,7 +98,7 @@ export const Navbar: React.FC = () => {
           </div>
 
           <button className="w-full mt-3 bg-green-600 hover:bg-green-700 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
-            Join Early Access
+            Join Our Early Access
           </button>
         </div>
       )}
