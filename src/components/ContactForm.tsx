@@ -31,7 +31,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen bg-white px-4 py-12 flex flex-col items-center">
+    <div className="min-h-screen bg-white px-4 py-12 flex flex-col items-center"  id="contact" >
       <h1 className="text-4xl font-semibold mb-8 text-center">
        Contact Us
       </h1>
