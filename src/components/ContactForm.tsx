@@ -44,8 +44,7 @@ export default function ContactForm() {
             Reach out via social or send us a message.
           </p>
 
-          <div className="flex flex-col gap-4 text-lg text-black-700">
-
+          <div className="flex flex-row flex-wrap justify-center lg:flex-col gap-4 text-lg text-black-700">
             <a
               href="https://twitter.com/harvestnexus"
               target="_blank"
@@ -86,7 +85,7 @@ export default function ContactForm() {
               name="Name"
               type="text"
               placeholder="Name"
-              className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full p-3 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
               value={formData.Name}
               onChange={handleChange}
               required
@@ -96,7 +95,7 @@ export default function ContactForm() {
               name="phone"
               type="tel"
               placeholder="Phone Number"
-              className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full p-3 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
               value={formData.phone}
               onChange={handleChange}
             />
@@ -105,7 +104,7 @@ export default function ContactForm() {
               name="email"
               type="email"
               placeholder="Email Address"
-              className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full p-3 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
               value={formData.email}
               onChange={handleChange}
               required
@@ -114,7 +113,7 @@ export default function ContactForm() {
               name="Address"
               type="text"
               placeholder="Address"
-              className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full p-3 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
               value={formData.Address}
               onChange={handleChange}
             />
@@ -122,7 +121,7 @@ export default function ContactForm() {
               name="message"
               rows={4}
               placeholder="Your Message"
-              className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full p-3 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
               value={formData.message}
               onChange={handleChange}
               required
