@@ -80,8 +80,8 @@ export const Navbar: React.FC = () => {
             className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 transition"
           />
           <NavLink
-            href="/contact"
-            label="Blog"
+            href="#contact"
+            label="Contact Us"
             onClick={closeMenu}
             className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 transition"
           />

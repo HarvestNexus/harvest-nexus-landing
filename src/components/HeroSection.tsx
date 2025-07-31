@@ -73,7 +73,7 @@ export default function HeroSection() {
           </p>
         </div>
         <div className="w-full md:w-[45%] flex justify-center md:justify-end mt-10 md:mt-0">
-          <div className="w-[90%] sm:w-[450px] md:w-[500px] lg:w-[600px] h-[250px] sm:h-[300px] md:h-[350px] rounded-xl overflow-hidden shadow-xl">
+          <div className="w-[90%] sm:w-[600px] md:w-[500px] lg:w-[600px] h-[250px] sm:h-[400px] md:h-[350px] rounded-xl overflow-hidden shadow-xl">
             <img
               src="/images/farmer2.jpg"
               alt="Farmer"
@@ -104,8 +104,10 @@ export default function HeroSection() {
         </div>
 
         <div className="flex flex-col justify-center items-center space-y-6">
-          <div className="flex flex-row items-center justify-center gap-10 mt-6">
-            <div className="flex flex-col items-center space-y-6">
+          {/* Small screen: horizontal layout; Medium+ screen: vertical */}
+          <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center gap-10 mt-6">
+            {/* Toggle buttons - always vertical */}
+            <div className="flex flex-row md:flex-col items-center space-x-6 md:space-x-0 md:space-y-6">
               <button
                 onClick={handlePrev}
                 className="bg-gray-100 hover:bg-green-200 p-5 rounded-full transition duration-300 text-black shadow-md hover:scale-110"
@@ -120,13 +122,18 @@ export default function HeroSection() {
               </button>
             </div>
 
-            <div className="flex flex-col items-center ml-6">
-              <div className="flex flex-col items-center font-bold text-sm leading-tight tracking-widest text-black">
+            {/* Follow us label + icons */}
+            <div className="flex flex-col items-center md:ml-0 lg:ml-6">
+              <div className="flex flex-row md:flex-col items-center font-bold text-sm leading-tight tracking-widest text-black">
+                {/* Vertical split for medium+ screens, horizontal otherwise */}
                 {"FOLLOW US ON".split("").map((char, idx) => (
-                  <span key={idx}>{char}</span>
+                  <span key={idx} className="md:block hidden">
+                    {char}
+                  </span>
                 ))}
+                <span className="md:hidden block">FOLLOW US ON</span>
               </div>
-              <div className="flex flex-col items-center space-y-4 text-2xl text-black mt-4">
+              <div className="flex flex-row md:flex-col items-center gap-4 text-2xl text-black mt-4">
                 <a
                   href="https://linkedin.com"
                   target="_blank"
