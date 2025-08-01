@@ -5,6 +5,7 @@ import './index.css'
 import FarmingInnovationSection from "./components/FarmingInnovationSection"
 import HeroSection from "./components/HeroSection"
 import AboutSection from "./components/AboutSection";
+import ContactForm from "./components/ContactForm";
 // import FarmingSection from "./components/TestFile/FarmingSection"
 
 const App: React.FC = () => {
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <HeroSection />
         <FarmingInnovationSection />
         <AboutSection />
+          <ContactForm />
     </div>
   );
 };

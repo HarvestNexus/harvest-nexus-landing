@@ -7,8 +7,8 @@ export default function HeroSection() {
     "We bridge the gap between farmers and buyers making fresh produce more affordable and reducing post-harvest losses.";
 
   const [index, setIndex] = useState(0);
-  const slideRef = useRef();
-  const fadeRef = useRef();
+  const slideRef = useRef<HTMLDivElement | null>(null);
+  const fadeRef = useRef<HTMLDivElement | null>(null);
   const [animate, setAnimate] = useState(false);
   const [typewriterText, setTypewriterText] = useState("");
   const fullText = "Turning  Harvest Into Profits";
@@ -28,21 +28,25 @@ export default function HeroSection() {
   }, []);
 
   const handleNext = () => {
-    fadeRef.current.classList.add("-translate-x-full", "opacity-0");
-    setTimeout(() => {
-      setIndex((prev) => (prev + 1) % images.length);
-      fadeRef.current.classList.remove("-translate-x-full");
-      fadeRef.current.classList.add("translate-x-0", "opacity-100");
-    }, 400);
+    if (fadeRef.current) {
+      fadeRef.current.classList.add("-translate-x-full", "opacity-0");
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % images.length);
+        fadeRef.current?.classList.remove("-translate-x-full");
+        fadeRef.current?.classList.add("translate-x-0", "opacity-100");
+      }, 400);
+    }
   };
 
   const handlePrev = () => {
-    fadeRef.current.classList.add("translate-x-full", "opacity-0");
-    setTimeout(() => {
-      setIndex((prev) => (prev - 1 + images.length) % images.length);
-      fadeRef.current.classList.remove("translate-x-full");
-      fadeRef.current.classList.add("translate-x-0", "opacity-100");
-    }, 400);
+    if (fadeRef.current) {
+      fadeRef.current.classList.add("translate-x-full", "opacity-0");
+      setTimeout(() => {
+        setIndex((prev) => (prev - 1 + images.length) % images.length);
+        fadeRef.current?.classList.remove("translate-x-full");
+        fadeRef.current?.classList.add("translate-x-0", "opacity-100");
+      }, 400);
+    }
   };
 
   useEffect(() => {
