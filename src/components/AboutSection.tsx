@@ -1,102 +1,99 @@
 import React from 'react';
 
-const AboutSection: React.FC = () => {
-  const sectionClasses = "grid gap-8 md:grid-cols-2 items-center";
+const missionStatements = [
+  {
+    title: 'Our Mission',
+    description:
+      'To empower farmers by connecting them directly with buyers, providing access to reliable storage and logistics through a platform that ensures fair returns for every harvest.',
+  },
+  {
+    title: 'Our Vision',
+    description:
+      'We aim to reduce post-harvest losses and foster sustainable agriculture through seamless, tech-driven solutions that bridge the gap between producers and consumers.',
+  },
+];
 
+const AboutSection: React.FC = () => {
   return (
-    <section className="px-6  mx-auto max-w-7xl space-y-20">
-      {/* 🔗 Logo & Intro */}
-      <header className="flex items-center gap-4 ">
+    <section className="min-h-screen bg-white py-8 px-4 md:px-12 flex flex-col items-start">
+{/* Header Row */}
+      <div className="flex items-center gap-4 mb-2">
         <img
           src="/images/logo.jpg"
-          alt="Company Logo"
+          alt="Harvest Nexus Logo"
           className="w-12 h-12 rounded-full object-cover border-2 border-green-100"
           loading="lazy"
         />
-        <h1 className="text-4xl font-bold text-black">Who We Are</h1>
-      </header>
+        <span className="text-xl font-semibold text-green-400">About Us</span>
+      </div>
+{/* Title */}
+      <h1 className="text-4xl font-extrabold text-black mb-10 tracking-tight font-['Noto Sans']">
+        Who We Are
+      </h1>
+      
 
-      {/* WHO WE ARE Header */}
-{/* <header className="flex items-center gap-4 mb-[14px]">
-  <img
-    src="/images/logo.jpg"
-    alt="Company Logo"
-    className="w-12 h-12 rounded-full object-cover border-2 border-green-100"
-    loading="lazy"
-  />
-  <h1 className="text-3xl font-bold text-gray-900
-</header> */}
-
-{/* Mission Section */}
-<article className="grid gap-1 md:grid-cols-2 items-center">
-  <div className="space-y-4">
-    <h2 className="text-2xl font-extrabold text-green-700 tracking-tight">
-      Our Mission
-    </h2>
-    <p className="text-gray-700 leading-relaxed font-bold " style={{fontWeight:600}}>
-      To empower farmers by connecting them directly with buyers, providing access to reliable storage and logistics through a platform that ensures fair returns for every harvest.
-    </p>
-  </div>
-  <figure className="h-50 md:h-50 w-full rounded-xl overflow-hidden shadow-lg">
-    <img
-      src="/images/farm-worker-happy-see-non-gmo-vegetable-plantation-crop-yields-organically-growing-fresh-healthy-way-without-using-herbicides-eco-friendly-bio-agricultural-greenhouse-farm.jpg"
-      alt="Farmer working in field"
-      className="w-full h-50 object-cover transition-transform duration-500 hover:scale-105"
-      loading="lazy"
-    />
-  </figure>
-</article>
-
-
-      {/* 🛠️ What We Do Section */}
-      <article className={sectionClasses}>
-        <div className="grid grid-cols-2 gap-4">
-          <figure className="rounded-xl overflow-hidden shadow-md h-48 md:h-64">
-            <img
-              src="/images/IMG-20250801-WA0006.jpg"
-              alt="Agricultural activity"
-              className="w-full h-full object-cover transform transition duration-500 hover:scale-105"
-              loading="lazy"
-            />
-          </figure>
-          <figure className="rounded-xl overflow-hidden shadow-md h-20 md:h-40 -mt-4">
-            <img
-              src="/images/IMG-20250801-WA0009.jpg"
-              alt="Farming tools"
-              className="w-full h-full object-cover transform transition duration-500 hover:scale-105"
-              loading="lazy"
-            />
-          </figure>
-        </div>
-        <div className="space-y-4">
-          <h2 className="text-2xl font-extrabold text-green-700">What We Do</h2>
+      {/* 🌿 Mission & Vision Sections with Image Grid */}
+      <div className="max-w-7xl w-full grid md:grid-cols-3 gap-6">
+        {/* Mission Statement */}
+        <div className="md:col-span-2 space-y-4">
+          <h2 className="text-3xl font-extrabold text-green-400 tracking-tight">
+            {missionStatements[0].title}
+          </h2>
           <p className="text-gray-700 leading-relaxed font-semibold">
-             A team of young, talented individuals driven by integrity and passion,
-              dedicated to transforming the agricultural industry through innovative
-            solutions and best practices.
+            {missionStatements[0].description}
           </p>
         </div>
-      </article>
 
-      {/* 🌍 Vision Section */}
-      <article className={sectionClasses}>
-        <div className="space-y-1">
-          <h2 className="text-2xl font-extrabold text-green-700">Our Vision</h2>
-          <p className="text-gray-700 leading-relaxed">
-            To empower farmers and buyers alike by bridging the gap between agricultural producers
-            and consumers,reducing losses, and fostering sustainable agriculture
-            through seamless, tech-driven solutions.
-          </p>
-        </div>
-        <figure className="h-50 md:h-50 w-full rounded-xl overflow-hidden shadow-lg">
+        {/* Image 1 */}
+        <div className="md:row-span-2 rounded-xl overflow-hidden shadow-md">
           <img
-            src="/images/IMG-20250801-WA0003.jpg"
-            alt="Futuristic agricultural landscape"
-            className="w-full h-full object-cover transform transition duration-500 hover:scale-105"
+            src="/images/farm-worker-happy-see-non-gmo-vegetable-plantation-crop-yields-organically-growing-fresh-healthy-way-without-using-herbicides-eco-friendly-bio-agricultural-greenhouse-farm.jpg"
+            alt="Empowered farmer"
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
           />
-        </figure>
-      </article>
+        </div>
+
+        {/* Image 2 */}
+        <div className="md:row-span-2 rounded-xl overflow-hidden shadow-md">
+          <img
+            src="/images/IMG-20250801-WA0006.jpg"
+            alt="Agricultural Activity"
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        {/* Image 3 */}
+        {/* Middle Image – horizontal layout */}
+<div className="md:row-span-1 rounded-xl overflow-hidden shadow-md h-48">
+  <img
+    src="/images/IMG-20250801-WA0009.jpg"
+    alt="Agricultural Activity"
+    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+    loading="lazy"
+  />
+</div>
+
+
+        {/* Vision Statement */}
+        <div className="md:col-span-2 space-y-4">
+          <h2 className="text-3xl font-extrabold text-green-400 tracking-tight font-['Noto Sans']">
+            {missionStatements[1].title}
+          </h2>
+          <p className="text-gray-700 leading-relaxed font-semibold">
+            {missionStatements[1].description}
+          </p>
+        </div>
+      </div>
+      
+      {/* What We Do Section
+      <div className="mt-12 space-y-6 max-w-4xl">
+        <h2 className="text-3xl font-extrabold text-green-700">What We Do</h2>
+        <p className="text-gray-700 leading-relaxed font-semibold">
+          We provide comprehensive solutions designed to help farmers maximize their yields, enhance efficiency, and adopt environmentally responsible practices. Our approach includes precision farming techniques, smart irrigation systems, soil health management, and access to cutting-edge agricultural equipment. We are committed to creating a future where farming is not just a livelihood but a thriving and sustainable profession that benefits both people and the planet.
+        </p>
+      </div> */}
     </section>
   );
 };
