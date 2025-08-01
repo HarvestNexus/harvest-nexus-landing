@@ -70,7 +70,7 @@ const FarmingInnovationSection: React.FC = () => {
     {/* Right - Content and Features */}
     <div className="space-y-8">
       <div>
-        <h2 className="font-['Noto_Sans'] text-3xl md:text-4xl font-semibold text-gray-900">
+        <h2 className="font-['Noto_Sans'] text-3xl md:text-4xl font-semibold text-gray-700">
           Farmers Earn More. Buyers Get fresher. Everyone Wins
         </h2>
         <p className="mt-4 text-gray-600">
@@ -83,7 +83,7 @@ const FarmingInnovationSection: React.FC = () => {
           <div key={index} className="flex flex-col rounded-xl items-start gap-2 rounded-300 px-2 py-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-secondary">
             <div>{feature.icon}</div>
             <h4 className="text-lg font-semibold text-gray-900 font-['Noto_Sans']">{feature.title}</h4>
-            <p className="text-md text-gray-600 font-['Noto_Sans']">{feature.description}</p>
+            <p className="text-sm text-gray-600 font-['Noto_Sans']">{feature.description}</p>
           </div>
         ))}
       </div>
