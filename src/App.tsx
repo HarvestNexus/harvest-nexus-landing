@@ -3,7 +3,8 @@ import React from "react";
 import {Navbar} from "./components/Navbar/Navbar"
 import './index.css'
 import FarmingInnovationSection from "./components/FarmingInnovationSection"
-import HeroSection from "./components/HeroSection";
+import HeroSection from "./components/HeroSection"
+import AboutSection from "./components/AboutSection";
 // import FarmingSection from "./components/TestFile/FarmingSection"
 
 const App: React.FC = () => {
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <Navbar />
         <HeroSection />
         <FarmingInnovationSection />
+        <AboutSection />
     </div>
   );
 };
