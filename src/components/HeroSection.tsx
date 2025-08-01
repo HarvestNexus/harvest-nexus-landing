@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export default function HeroSection() {
-  const images = ["/images/slide.jpg", "/images/slide2.jpg", "/images/slide3.jpg"];
+  const images = ["/images/slide1.jpg", "/images/slide2.jpg", "/images/slide3.jpg",  "/images/slide4.jpg"];
   const constantText =
     "We bridge the gap between farmers and buyers making fresh produce more affordable and reducing post-harvest losses.";
 
@@ -76,7 +76,7 @@ export default function HeroSection() {
         <div className="w-full md:w-[45%] flex justify-center md:justify-end mt-10 md:mt-0">
           <div className="w-full sm:w-[600px] h-[350px] sm:h-[400px] rounded-xl overflow-hidden shadow-xl">
             <img
-              src="/images/farmer2.jpg"
+              src="/images/farmer3.jpg"
               alt="Farmer"
               className="w-full h-full object-cover"
             />

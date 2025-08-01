@@ -134,7 +134,7 @@ export default function ContactForm() {
               <FaEnvelope className="text-xl" />
               <span className="hidden lg:inline">harvesthublimited@gmail.com</span>
             </a>
-            <span className="text-sm">We respond within 24 hour</span>
+            <span className="text-lg italic font-medium hover:text-green-600">We respond within 24 hours</span>
           </div>
         </div>
       </div>
