@@ -1,8 +1,9 @@
 import React from "react";
-import { Navbar } from "./components/Navbar/Navbar";
-import './index.css';
-import FarmingInnovationSection from "./components/FarmingInnovationSection";
-import HeroSection from "./components/HeroSection";
+import {Navbar} from "./components/Navbar/Navbar"
+import './index.css'
+import FarmingInnovationSection from "./components/FarmingInnovationSection"
+import HeroSection from "./components/HeroSection"
+import AboutSection from "./components/AboutSection";
 import ContactForm from "./components/ContactForm";
 const App: React.FC = () => {
   // sm:px-6 lg:px-8 => controls left/right padding
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <Navbar />
         <HeroSection />
         <FarmingInnovationSection />
+        <AboutSection />
           <ContactForm />
     </div>
   );
