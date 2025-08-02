@@ -10,14 +10,14 @@ const features = [
     title: "Direct Farm-to-Buyer Sales",
     icon: <MdAgriculture size={28} className="text-green-600" />,
     description:
-      "AFarmers sells produce directly to consumers, eliminating middlemen for better prices",
+      "Farmers sells produce directly to consumers, eliminating middlemen for better prices",
   },
 
   {
     title: "Real-Time Market Prices",
     icon: <FaChartLine size={28} className="text-green-600" />,
     description:
-      "RLive pricing data helps farmers and buyers negotiate fair deals",
+      "Live pricing data helps farmers and buyers negotiate fair deals",
   },
   {
     title: "Secure Payments",
