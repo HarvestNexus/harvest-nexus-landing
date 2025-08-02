@@ -54,15 +54,15 @@ const FarmingInnovationSection: React.FC = () => {
                   grid-cols-1 lg:grid-cols-[1fr_2fr]">
     
     {/* Left - Image with Experience Badge */}
-    <div className="relative shadow-2xl w-full h-full flex rounded-xl justify-center lg:justify-start">
-      <div className="relative  w-full max-w-md aspect-[4/3] rounded-xl overflow-hidden shadow-md">
+    <div className="relative shadow-none md:shadow-none lg:shadow-2xl w-full h-full flex rounded-xl justify-center lg:justify-start">
+      <div className="relative  w-full max-w-md aspect-[4/3] rounded-xl overflow-hidden shadow-none md:shadow-none lg:shadow-md">
         <img 
           src="./images/farmer.jpg" 
           alt="Farmer"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-cover object-top"
         />
         <div className="absolute bottom-4 font-['Noto_Sans'] left-3 right-3 bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-lg text-sm">
-          Containing more than <span className="text-green-600 font-bold">2 decades</span> of farming experience
+          Containing more than <span className="text-green-600 font-['Noto_Sans'] font-bold">2 decades</span> of farming experience
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@ const FarmingInnovationSection: React.FC = () => {
     {/* Right - Content and Features */}
     <div className="space-y-8">
       <div>
-        <h2 className="font-['Noto_Sans'] text-3xl md:text-4xl font-semibold text-gray-700">
+        <h2 className="font-['Noto_Sans'] text-3xl md:text-4xl font-semibold text-black">
           Farmers Earn More. Buyers Get fresher. Everyone Wins
         </h2>
         <p className="mt-4 text-gray-600">
@@ -81,7 +81,7 @@ const FarmingInnovationSection: React.FC = () => {
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {features.map((feature, index) => (
           <div key={index} className="flex flex-col rounded-xl items-start gap-2 rounded-300 px-2 py-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-secondary">
-            <div>{feature.icon}</div>
+            <div className="text-green-400">{feature.icon}</div>
             <h4 className="text-lg font-semibold text-gray-900 font-['Noto_Sans']">{feature.title}</h4>
             <p className="text-sm text-gray-600 font-['Noto_Sans']">{feature.description}</p>
           </div>
