@@ -66,13 +66,16 @@ const FarmingInnovationSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="space-y-8">
-          <div>
-            <h2 className="font-['Noto_Sans'] text-3xl md:text-4xl font-semibold text-gray-900">
-              Farmers Earn More. Buyers Get fresher. Everyone Wins
-            </h2>
-            <p className="mt-4 text-gray-600"></p>
-          </div>
+    {/* Right - Content and Features */}
+    <div className="space-y-8">
+      <div>
+        <h2 className="font-['Noto_Sans'] text-3xl md:text-4xl font-semibold text-gray-900">
+          Farmers Earn More. Buyers Get fresher. Everyone Wins
+        </h2>
+        <p className="mt-4 text-gray-600">
+          {/*sub texts area*/}
+        </p>
+      </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
             {features.map((feature, index) => (
