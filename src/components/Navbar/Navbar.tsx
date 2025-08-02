@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
 
          
           <button className="hidden lg:inline-block bg-green-600 hover:bg-green-700 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
-            Join Early Access
+            Join Our Early Access
           </button>
 
          
@@ -65,25 +65,25 @@ export const Navbar: React.FC = () => {
             href="/"
             label="Home"
             onClick={closeMenu}
-            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 transition"
+            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-700 transition"
           />
           <NavLink
             href="/about"
             label="About"
             onClick={closeMenu}
-            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 transition"
+            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-700 transition"
           />
           <NavLink
             href="/services"
             label="Service"
             onClick={closeMenu}
-            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 transition"
+            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-700 transition"
           />
           <NavLink
-            href="/contact"
-            label="Blog"
+            href="#contact"
+            label="Contact Us"
             onClick={closeMenu}
-            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 transition"
+            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-700 transition"
           />
 
           <hr className="border-gray-200 my-3" />
@@ -98,7 +98,7 @@ export const Navbar: React.FC = () => {
           </div>
 
           <button className="w-full mt-3 bg-green-600 hover:bg-green-700 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
-            Join Early Access
+            Join Our Early Access
           </button>
         </div>
       )}
