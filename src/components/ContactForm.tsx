@@ -92,7 +92,7 @@ export default function ContactForm() {
 
             <button
               type="submit"
-              className="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition"
+              className="px-6 py-2 bg-green-400 text-white rounded-full hover:bg-green-700 transition"
             >
               Send Message
             </button>
@@ -109,7 +109,7 @@ export default function ContactForm() {
               href="https://twitter.com/harvestnexus"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-green-600 transition"
+              className="flex items-center gap-2 hover:text-green-400 transition"
             >
               <FaXTwitter className="text-xl" />
               <span className="hidden lg:inline">@harvestnexus</span>
@@ -120,7 +120,7 @@ export default function ContactForm() {
               href="https://www.linkedin.com/company/harvest-nexus"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-green-600 transition"
+              className="flex items-center gap-2 hover:text-green-400 transition"
             >
               <FaLinkedin className="text-xl" />
               <span className="hidden lg:inline">Harvest Nexus</span>
@@ -129,12 +129,12 @@ export default function ContactForm() {
 
             <a
               href="mailto:harvesthublimited@gmail.com"
-              className="flex items-center gap-2 hover:text-green-600 transition"
+              className="flex items-center gap-2 hover:text-green-400 transition"
             >
               <FaEnvelope className="text-xl" />
               <span className="hidden lg:inline">harvesthublimited@gmail.com</span>
             </a>
-            <span className="text-lg italic font-medium hover:text-green-600">We respond within 24 hours</span>
+            <span className="text-lg italic font-medium hover:text-green-400">We respond within 24 hours</span>
           </div>
         </div>
       </div>

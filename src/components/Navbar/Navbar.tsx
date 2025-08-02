@@ -23,15 +23,15 @@ export const Navbar: React.FC = () => {
 
           
           <div className="hidden lg:flex space-x-8 ">
-            <NavLink className="text-gray-800 hover:text-green-600" href="/" label="Home" />
-            <NavLink className="text-gray-800 hover:text-green-600" href="/about" label="About" />
-            <NavLink className="text-gray-800 hover:text-green-600" href="/services" label="Service" />
-            <NavLink className="text-gray-800 hover:text-green-600" href="#contact" label="Contact Us" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="/" label="Home" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="/about" label="About" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="/services" label="Service" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="#contact" label="Contact Us" />
           </div>
 
        
           <div className="hidden md:hidden lg:inline-flex items-center space-x-2">
-            <div className="bg-green-600 rounded-full p-2">
+            <div className="bg-green-400 rounded-full p-2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
               </svg>
@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
           </div>
 
          
-          <button className="hidden lg:inline-block bg-green-600 hover:bg-green-700 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
+          <button className="hidden lg:inline-block bg-green-300 hover:bg-green-600 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
             Join Our Early Access
           </button>
 
@@ -48,7 +48,7 @@ export const Navbar: React.FC = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-600"
+              className="text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -65,25 +65,25 @@ export const Navbar: React.FC = () => {
             href="/"
             label="Home"
             onClick={closeMenu}
-            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-700 transition"
+            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
           />
           <NavLink
             href="/about"
             label="About"
             onClick={closeMenu}
-            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-700 transition"
+            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
           />
           <NavLink
             href="/services"
             label="Service"
             onClick={closeMenu}
-            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-700 transition"
+            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
           />
           <NavLink
             href="#contact"
             label="Contact Us"
             onClick={closeMenu}
-            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-700 transition"
+            className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
           />
 
           <hr className="border-gray-200 my-3" />
@@ -97,7 +97,7 @@ export const Navbar: React.FC = () => {
             <span className="font-bold text-sm">+23481-21766402</span>
           </div>
 
-          <button className="w-full mt-3 bg-green-600 hover:bg-green-700 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
+          <button className="w-full mt-3 bg-green-400 hover:bg-green-600 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
             Join Our Early Access
           </button>
         </div>

@@ -139,7 +139,7 @@ export default function HeroSection() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-green-600 transition-colors duration-300"
+                  className="hover:text-green-400 transition-colors duration-300"
                 >
                   <FaLinkedin />
                 </a>
@@ -147,7 +147,7 @@ export default function HeroSection() {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-green-600 transition-colors duration-300"
+                  className="hover:text-green-400 transition-colors duration-300"
                 >
                   <FaXTwitter />
                 </a>
