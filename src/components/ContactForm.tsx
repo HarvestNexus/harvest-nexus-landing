@@ -142,3 +142,27 @@ export default function ContactForm() {
     </div>
   );
 }
+
+
+
+<div className="w-full max-w-md space-y-2">
+          <div className="overflow-hidden rounded-xl aspect-[4/3] relative">
+            <img
+              src="./images/farmer.jpg"
+              alt="Farmer"
+              className="absolute top-0 left-0 w-full h-[200%] object-cover"
+            />
+          </div>
+          <div className="overflow-hidden rounded-xl aspect-[4/3] relative">
+            <img
+              src="./images/farmer.jpg"
+              alt="Farmer"
+              className="absolute bottom-0 left-0 w-full h-[200%] object-cover"
+            />
+            <div className="absolute bottom-4 left-3 right-3 bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-lg text-sm font-['Noto_Sans']">
+              Containing more than{" "}
+              <span className="text-green-600 font-bold">2 decades</span> of
+              farming experience
+            </div>
+          </div>
+        </div>
