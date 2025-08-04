@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { NavLink } from "./NavLink";
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  onJoinClick: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const toggleMenu = () => setIsMobileOpen(!isMobileOpen);
   const closeMenu = () => setIsMobileOpen(false);
 
   return (
-    <nav className="bg-white  sticky top-0 z-50">
+    <nav className="bg-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
        
@@ -21,8 +25,8 @@ export const Navbar: React.FC = () => {
             <span className="text-xl font-bold">Harvest Nexus</span>
           </div>
 
-          
-          <div className="hidden lg:flex space-x-8 ">
+     
+          <div className="hidden lg:flex space-x-8">
             <NavLink className="text-gray-800 hover:text-green-400" href="/" label="Home" />
             <NavLink className="text-gray-800 hover:text-green-400" href="/about" label="About" />
             <NavLink className="text-gray-800 hover:text-green-400" href="/services" label="Service" />
@@ -39,12 +43,14 @@ export const Navbar: React.FC = () => {
             <span className="font-bold text-sm">+234-8065645754</span>
           </div>
 
-         
-          <button className="hidden lg:inline-block bg-green-300 hover:bg-green-600 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
+          <button
+            onClick={onJoinClick}
+            className="hidden lg:inline-block bg-green-300 hover:bg-green-600 transition text-white px-4 py-2 rounded-full text-sm font-semibold"
+          >
             Join Our Early Access
           </button>
 
-         
+      
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
@@ -58,7 +64,7 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
 
-  
+ 
       {isMobileOpen && (
         <div className="lg:hidden px-4 pt-2 pb-4 bg-white shadow-md space-y-3">
           <NavLink
@@ -88,6 +94,7 @@ export const Navbar: React.FC = () => {
 
           <hr className="border-gray-200 my-3" />
 
+      
           <div className="flex items-center space-x-3">
             <div className="bg-green-500 rounded-full p-2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" className="w-5 h-5">
@@ -97,7 +104,10 @@ export const Navbar: React.FC = () => {
             <span className="font-bold text-sm">+23481-21766402</span>
           </div>
 
-          <button className="w-full mt-3 bg-green-400 hover:bg-green-600 transition text-white px-4 py-2 rounded-full text-sm font-semibold">
+          <button
+            onClick={onJoinClick}
+            className="w-full mt-3 bg-green-400 hover:bg-green-600 transition text-white px-4 py-2 rounded-full text-sm font-semibold"
+          >
             Join Our Early Access
           </button>
         </div>

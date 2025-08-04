@@ -1,13 +1,13 @@
-import { useState, FormEvent, ChangeEvent } from "react";
+import { useState } from "react";
+import type { FormEvent, ChangeEvent } from "react";
 import { FaXTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
 interface FormData {
   Name: string;
   email: string;
   phone: string;
-   Address: string;
+  Address: string;
   message: string;
-  
 }
 
 export default function ContactForm() {
@@ -31,15 +31,12 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen bg-white px-4 py-12 flex flex-col items-center"  id="contact" >
+    <div className="min-h-screen bg-white px-4 py-12 flex flex-col items-center" id="contact">
       <h1 className="text-4xl font-semibold mb-8 text-center">
-       Contact Us
+        Contact Us
       </h1>
 
       <div className="flex flex-col lg:flex-row gap-10 w-full max-w-6xl bg-gray-100 rounded-2xl shadow-md p-8">
-
-        
-
         <div className="w-full lg:w-2/3">
           <h2 className="text-xl font-medium mb-6">Get in touch!</h2>
 
@@ -54,7 +51,7 @@ export default function ContactForm() {
               required
             />
 
-                <input
+            <input
               name="phone"
               type="tel"
               placeholder="Phone Number"
@@ -72,7 +69,8 @@ export default function ContactForm() {
               onChange={handleChange}
               required
             />
-                <input
+
+            <input
               name="Address"
               type="text"
               placeholder="Address"
@@ -80,6 +78,7 @@ export default function ContactForm() {
               value={formData.Address}
               onChange={handleChange}
             />
+
             <textarea
               name="message"
               rows={4}
@@ -98,6 +97,7 @@ export default function ContactForm() {
             </button>
           </form>
         </div>
+
         <div className="flex flex-col items-center lg:items-start gap-6 w-full lg:w-1/3">
           <h2 className="text-2xl font-semibold text-black-700">Connect With Us</h2>
           <p className="text-gray-600 text-center lg:text-left">
@@ -115,7 +115,6 @@ export default function ContactForm() {
               <span className="hidden lg:inline">@harvestnexus</span>
             </a>
 
-
             <a
               href="https://www.linkedin.com/company/harvest-nexus"
               target="_blank"
@@ -126,7 +125,6 @@ export default function ContactForm() {
               <span className="hidden lg:inline">Harvest Nexus</span>
             </a>
 
-
             <a
               href="mailto:harvesthublimited@gmail.com"
               className="flex items-center gap-2 hover:text-green-400 transition"
@@ -134,7 +132,10 @@ export default function ContactForm() {
               <FaEnvelope className="text-xl" />
               <span className="hidden lg:inline">harvesthublimited@gmail.com</span>
             </a>
-            <span className="text-lg italic font-medium hover:text-green-400">We respond within 24 hours</span>
+
+            <span className="text-lg italic font-medium hover:text-green-400">
+              We respond within 24 hours
+            </span>
           </div>
         </div>
       </div>
