@@ -91,19 +91,20 @@ export default function HeroSection() {
           }`}
       >
 
-        <div className="group relative rounded-xl overflow-hidden shadow-2xl w-full sm:w-[950px] h-[350px] sm:h-[400px] transition-all duration-700">
-          <div
-            ref={fadeRef}
-            className="absolute inset-0 w-full h-full transition-all duration-700 ease-in-out translate-x-0 opacity-100"
-          >
-            <img
-              src={images[index]}
-              alt={`Slide ${index}`}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 z-10 transition duration-500" />
-          </div>
-        </div>
+        <div className="group relative rounded-xl overflow-hidden shadow-2xl w-full min-w-[300px] max-w-[950px] h-[350px] sm:h-[400px] transition-all duration-700">
+  <div
+    ref={fadeRef}
+    className="absolute inset-0 w-full h-full transition-all duration-700 ease-in-out translate-x-0 opacity-100"
+  >
+    <img
+      src={images[index]}
+      alt={`Slide ${index}`}
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 z-10 transition duration-500" />
+  </div>
+</div>
+
 
 
         <div className="flex flex-col justify-center items-center">
@@ -139,7 +140,7 @@ export default function HeroSection() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-green-600 transition-colors duration-300"
+                  className="hover:text-green-400 transition-colors duration-300"
                 >
                   <FaLinkedin />
                 </a>
@@ -147,7 +148,7 @@ export default function HeroSection() {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-green-600 transition-colors duration-300"
+                  className="hover:text-green-400 transition-colors duration-300"
                 >
                   <FaXTwitter />
                 </a>
