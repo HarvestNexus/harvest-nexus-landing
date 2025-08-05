@@ -16,12 +16,14 @@ const missionStatements = [
 const AboutSection: React.FC = () => {
   return (
     <section
-      className="min-h-screen bg-white py-8 px-4 md:px-12 flex flex-col items-center"
+
+      className="min-h-screen bg-white py-8 px-4 md:px-12 flex flex-col items-center justify-center space-y-8"
       style={{ fontFamily: "'Noto Sans', sans-serif" }}
     >
-      {/* Header + Title */}
-      <div className="w-full max-w-7xl flex flex-col items-start mb-10">
-        <div className="flex items-center gap-4 mb-2">
+      <div className="w-full max-w-7xl flex flex-col items-start">
+        {/* Header */}
+        <div className="flex flex-col items-start gap-4 mb-2">
+
           <img
             src="/images/logo.jpg"
             alt="Harvest Nexus Logo"
@@ -30,10 +32,14 @@ const AboutSection: React.FC = () => {
           />
           <span className="text-xl font-semibold text-green-400">About Us</span>
         </div>
-        <h1 className="text-4xl font-extrabold text-black tracking-tight">Who We Are</h1>
+        {/* Title */}
+        <h1 className="text-4xl font-extrabold text-black mb-10 tracking-tight">
+          Who We Are
+        </h1>
       </div>
 
-      {/* Mission & Vision + Images Grid */}
+      {/* Mission & Vision Section with Image Grid */}
+
       <div className="max-w-7xl w-full grid md:grid-cols-3 gap-6">
         {/* Mission Statement */}
         <div className="md:col-span-2 space-y-4">
@@ -48,8 +54,10 @@ const AboutSection: React.FC = () => {
         {/* Image 1 */}
         <div className="md:row-span-2 rounded-xl overflow-hidden shadow-md">
           <img
-            src="/images/sunny.jpg"
-            alt="Agricultural Activity"
+
+            src="/images/farm-worker-happy-see-non-gmo-vegetable-plantation-crop-yields-organically-growing-fresh-healthy-way-without-using-herbicides-eco-friendly-bio-agricultural-greenhouse-farm.jpg"
+            alt="Empowered farmer"
+
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
           />
@@ -68,25 +76,30 @@ const AboutSection: React.FC = () => {
         {/* Image 3 */}
         <div className="md:row-span-1 rounded-xl overflow-hidden shadow-md h-48">
           <img
-            src="/images/farmer2.jpg"
-            alt="Farmer Working"
+
+            src="/images/rice-field-5706429_1280.jpg"
+            alt="Rice Field"
+
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
           />
         </div>
 
-        {/* What We Do */}
+
+        {/* What We Do Section */}
         <div className="md:col-span-2 space-y-4">
-          <h2 className="text-3xl font-extrabold text-green-400 tracking-tight">What We Do</h2>
+          <h2 className="text-3xl font-extrabold text-green-400 tracking-tight">
+            What We Do
+          </h2>
           <p className="text-gray-700 leading-relaxed font-semibold">
-            We help farmers boost productivity and sustainability through smart irrigation,
-            precision farming, and access to modern tools. Our goal is to make agriculture more
-            efficient, eco-friendly, and rewarding.
+            We help farmers boost productivity and sustainability through smart irrigation, precision farming, and access to modern tools. Our goal is to make agriculture more efficient, eco-friendly, and rewarding.
+
           </p>
         </div>
       </div>
 
-      {/* Our Vision Section with Image */}
+      {/* Vision Statement with Horizontal Image */}
+
       <div className="mt-14 max-w-7xl w-full flex flex-col md:flex-row items-start gap-6">
         <div className="md:w-2/3 space-y-4">
           <h2 className="text-3xl font-extrabold text-green-400 tracking-tight">
@@ -99,7 +112,9 @@ const AboutSection: React.FC = () => {
 
         <div className="md:w-1/3 rounded-xl overflow-hidden shadow-md">
           <img
-            src="/images/farm.jpg"
+
+            src="/images/rice-7176354_1280.jpg"
+
             alt="Sustainable Farming Practices"
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
