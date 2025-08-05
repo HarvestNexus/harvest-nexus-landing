@@ -49,14 +49,12 @@ const AboutSection: React.FC = () => {
 
         {/* Image 1 */}
         <div className="md:row-span-2 rounded-xl overflow-hidden shadow-md">
-
           <img
-            src="/images/logo.jpg"
-            alt="Harvest Nexus Logo"
-            className="w-12 h-12 rounded-full object-cover border-2 border-green-100"
+            src="/images/farm-worker-happy-see-non-gmo-vegetable-plantation-crop-yields-organically-growing-fresh-healthy-way-without-using-herbicides-eco-friendly-bio-agricultural-greenhouse-farm.jpg"
+            alt="Empowered farmer"
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
           />
-          <span className="text-xl font-semibold text-green-400">About Us</span>
         </div>
 
         {/* Image 2 */}
@@ -113,7 +111,6 @@ const AboutSection: React.FC = () => {
     />
   </div>
 </div>
-
 
     </section>
   );
