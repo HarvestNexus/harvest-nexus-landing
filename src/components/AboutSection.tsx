@@ -66,7 +66,7 @@ const AboutSection: React.FC = () => {
         {/* Image 2 */}
         <div className="md:row-span-2 rounded-xl overflow-hidden shadow-md">
           <img
-            src="/images/slide.jpg"
+            src="/images/strawberry-260688_1280.jpg"
             alt="Farming Process"
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
