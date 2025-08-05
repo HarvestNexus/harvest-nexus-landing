@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+const config = {
   content: [
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
@@ -10,14 +8,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'], // 👈 custom font family
+        roboto: ['Roboto', 'sans-serif'],
+        noto: ['"Noto Sans"', 'sans-serif'], // ✅ Added Noto Sans
       },
       colors: {
         primary: "#00a117",
         secondary: "#f2f2f2",
         brand: {
           DEFAULT: "#00a216",
-           light: "#33cc5c",
+          light: "#33cc5c",
           dark: "#007a12",
         },
       },
@@ -26,4 +25,4 @@ const config: Config = {
   plugins: [],
 }
 
-export default config
+module.exports = config;

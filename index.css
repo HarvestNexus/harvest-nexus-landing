@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  @keyframes fadeInUp {
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(40px);
@@ -11,6 +14,7 @@
     transform: translateY(0);
   }
 }
+
 .animate-fadeInUp {
   animation: fadeInUp 1s ease forwards;
 }
