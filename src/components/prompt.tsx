@@ -18,10 +18,10 @@ const Prompt: React.FC = () => {
 
         <div className="text-center md:text-left space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold text-black leading-snug">
-            Subscribe to <br /> our newsletter
+            Join Our Early Access<br /> <span className="text-green-600 text-lg">Shape the future of Farming!</span>
           </h2>
-          <p className="text-gray-600 max-w-md text-lg">
-            It is a long established fact that a reader will be distracted
+          <p className="text-gray-600 max-w-md text-sm">
+            Be the first to experience harvest Nexux, the platform revolutionary farm-to-buyer trade. Sign up now for exclusive early access, fresh foods, affordable pricing and swift deliveries.
           </p>
 
           <form
