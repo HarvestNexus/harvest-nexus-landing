@@ -9,7 +9,7 @@ const Prompt: React.FC = () => {
         <div className="mb-8 md:mb-0 md:mr-14">
           <div className="w-72 h-90 rounded-2xl overflow-hidden flex items-center justify-center bg-white">
             <img
-              src="/images/farmer.jpg"
+              src="/images/PromptFarmer.jpg"
               alt="Farmer with vegetables"
               className="h-full w-full object-cover"
             />
@@ -40,25 +40,25 @@ const Prompt: React.FC = () => {
               type="submit"
               className="bg-green-400 p-3 rounded-full hover:bg-green-500"
             >
-            <svg
-  xmlns="http://www.w3.org/2000/svg"
-  className="h-5 w-5 text-white"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
-  strokeWidth="2"
->
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    d="M22 2L11 13"
-  />
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    d="M22 2L15 22L11 13L2 9L22 2Z"
-  />
-</svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M22 2L11 13"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M22 2L15 22L11 13L2 9L22 2Z"
+                />
+              </svg>
 
             </button>
           </form>

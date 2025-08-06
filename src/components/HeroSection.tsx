@@ -5,7 +5,7 @@ export default function HeroSection() {
   const images = [
     "/images/slide1.jpg",
     "/images/slide2.jpg",
-    "/images/slide3.jpg",
+    "/images/slide33.jpg",
     "/images/slide4.jpg",
   ];
 
@@ -65,7 +65,7 @@ export default function HeroSection() {
 
   return (
     <section className="w-full min-h-screen font-['Noto_Sans'] bg-white text-black flex flex-col items-center justify-center px-4 sm:px-6 py-20 gap-20">
-      {/* Header */}
+
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="w-full md:w-[55%] flex items-start md:items-start justify-center md:justify-start flex-col text-left">
           <h1 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[68px] font-semibold leading-snug tracking-tight text-black">
@@ -87,12 +87,10 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Slider */}
       <div
         ref={slideRef}
-        className={`relative w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-1000 ease-in-out ${
-          animate ? "opacity-100" : "opacity-0"
-        }`}
+        className={`relative w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-1000 ease-in-out ${animate ? "opacity-100" : "opacity-0"
+          }`}
       >
         <div className="group relative rounded-xl overflow-hidden shadow-2xl w-full min-w-[300px] max-w-[950px] h-[350px] sm:h-[500px] transition-all duration-700 flex items-center justify-center">
           <div
@@ -108,10 +106,10 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Controls + Social */}
+
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center gap-10 mt-6">
-            {/* Buttons */}
+
             <div className="flex flex-row md:flex-col items-center space-x-6 md:space-x-0 md:space-y-6">
               <button
                 onClick={handlePrev}
@@ -127,7 +125,7 @@ export default function HeroSection() {
               </button>
             </div>
 
-            {/* Socials */}
+
             <div className="flex flex-col items-center md:ml-0 lg:ml-6">
               <div className="flex flex-row md:flex-col items-center font-bold text-sm leading-tight tracking-widest text-black">
                 {"FOLLOW US ON".split("").map((char, idx) => (
