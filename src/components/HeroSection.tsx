@@ -12,17 +12,18 @@ export default function HeroSection() {
   const constantText =
     "We bridge the gap between farmers and buyers making fresh produce more affordable and reducing post-harvest losses.";
   const fullText = "Turning Harvest Into Profits";
+  const words = fullText.split(" ");
+  const [visibleWords, setVisibleWords] = useState<number>(0);
 
   const [index, setIndex] = useState(0);
   const slideRef = useRef<HTMLDivElement | null>(null);
   const fadeRef = useRef<HTMLDivElement | null>(null);
   const [animate, setAnimate] = useState(false);
-  const [typewriterText, setTypewriterText] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 5000);
+    }, 8000);
     return () => clearInterval(interval);
   }, []);
 
@@ -38,7 +39,7 @@ export default function HeroSection() {
         setIndex((prev) => (prev + 1) % images.length);
         fadeRef.current?.classList.remove("-translate-x-full");
         fadeRef.current?.classList.add("translate-x-0", "opacity-100");
-      }, 400);
+      }, 600);
     }
   };
 
@@ -49,27 +50,33 @@ export default function HeroSection() {
         setIndex((prev) => (prev - 1 + images.length) % images.length);
         fadeRef.current?.classList.remove("translate-x-full");
         fadeRef.current?.classList.add("translate-x-0", "opacity-100");
-      }, 400);
+      }, 600);
     }
   };
 
   useEffect(() => {
-    let i = 0;
-    const typingInterval = setInterval(() => {
-      setTypewriterText(fullText.substring(0, i + 1));
-      i++;
-      if (i === fullText.length) clearInterval(typingInterval);
-    }, 80);
-    return () => clearInterval(typingInterval);
+    words.forEach((_, i) => {
+      setTimeout(() => {
+        setVisibleWords(i + 1);
+      }, i * 400);
+    });
   }, []);
 
   return (
     <section className="w-full min-h-screen font-['Noto_Sans'] bg-white text-black flex flex-col items-center justify-center px-4 sm:px-6 py-20 gap-20">
-
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
-        <div className="w-full md:w-[55%] flex items-start md:items-start justify-center md:justify-start flex-col text-left">
-          <h1 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[68px] font-semibold leading-snug tracking-tight text-black">
-            {typewriterText}
+        <div className="w-full md:w-[55%] flex items-start justify-center md:justify-start flex-col text-left">
+          <h1 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[68px] font-semibold leading-snug tracking-tight text-black flex flex-wrap gap-2">
+            {words.map((word, i) => (
+              <span
+                key={i}
+                className={`inline-block transition-all duration-500 ease-out transform ${
+                  i < visibleWords ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                }`}
+              >
+                {word}
+              </span>
+            ))}
           </h1>
           <p className="text-lg sm:text-xl mt-6 text-black font-medium max-w-2xl">
             {constantText}
@@ -89,8 +96,9 @@ export default function HeroSection() {
 
       <div
         ref={slideRef}
-        className={`relative w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-1000 ease-in-out ${animate ? "opacity-100" : "opacity-0"
-          }`}
+        className={`relative w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-1000 ease-in-out ${
+          animate ? "opacity-100" : "opacity-0"
+        }`}
       >
         <div className="group relative rounded-xl overflow-hidden shadow-2xl w-full min-w-[300px] max-w-[950px] h-[350px] sm:h-[500px] transition-all duration-700 flex items-center justify-center">
           <div
@@ -106,10 +114,8 @@ export default function HeroSection() {
           </div>
         </div>
 
-
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center gap-10 mt-6">
-
             <div className="flex flex-row md:flex-col items-center space-x-6 md:space-x-0 md:space-y-6">
               <button
                 onClick={handlePrev}
@@ -124,7 +130,6 @@ export default function HeroSection() {
                 ↓
               </button>
             </div>
-
 
             <div className="flex flex-col items-center md:ml-0 lg:ml-6">
               <div className="flex flex-row md:flex-col items-center font-bold text-sm leading-tight tracking-widest text-black">
