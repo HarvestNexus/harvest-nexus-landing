@@ -140,7 +140,7 @@ export default function ContactForm() {
             </button>
 
             {responseMessage && (
-              <p className="text-sm mt-2 text-gray-700">{responseMessage}</p>
+              <p className="text-sm mt- text-green-800">{responseMessage}</p>
             )}
           </form>
         </div>

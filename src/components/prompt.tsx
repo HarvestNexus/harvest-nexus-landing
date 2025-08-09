@@ -7,7 +7,7 @@ const Prompt: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setMessage(""); // Clear old message
+    setMessage(""); 
 
     try {
       const res = await fetch(
