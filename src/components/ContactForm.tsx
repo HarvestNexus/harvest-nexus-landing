@@ -34,7 +34,6 @@ export default function ContactForm() {
     setResponseMessage("");
 
     try {
-      // Fix: Send keys in lowercase to match backend expectations
       const payload = {
         name: formData.Name,
         email: formData.email,
