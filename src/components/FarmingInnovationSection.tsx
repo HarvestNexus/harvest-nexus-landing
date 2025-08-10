@@ -51,14 +51,14 @@ const FarmingInnovationSection: React.FC = () => {
           <div className="w-full max-w-md space-y-2">
             <div className="overflow-hidden rounded-xl aspect-[4/3] relative">
               <img
-                src="./images/farmer.jpg"
+                src="./images/farmer.avif"
                 alt="Farmer"
                 className="absolute top-0 left-0 w-full h-[200%] object-cover"
               />
             </div>
             <div className="overflow-hidden rounded-xl aspect-[4/3] relative">
               <img
-                src="./images/farmer.jpg"
+                src="./images/farmer.avif"
                 alt="Farmer"
                 className="absolute bottom-0 left-0 w-full h-[200%] object-cover"
               />
@@ -85,6 +85,7 @@ const FarmingInnovationSection: React.FC = () => {
               <div
                 key={index}
                 className="flex flex-col rounded-xl items-start gap-2 px-2 py-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-secondary"
+                loading="lazy"
               >
                 <div className="text-green-400">{feature.icon}</div>
                 <h4 className="text-lg font-semibold text-gray-900 font-['Noto_Sans']">
