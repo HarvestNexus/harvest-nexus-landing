@@ -16,14 +16,12 @@ const missionStatements = [
 const AboutSection: React.FC = () => {
   return (
     <section
-
       className="min-h-screen bg-white py-8 px-4 md:px-12 flex flex-col items-center justify-center space-y-8"
       style={{ fontFamily: "'Noto Sans', sans-serif" }}
     >
       <div className="w-full max-w-7xl flex flex-col items-start">
         {/* Header */}
         <div className="flex flex-col items-start gap-4 mb-2">
-
           <img
             src="/images/logo.jpg"
             alt="Harvest Nexus Logo"
@@ -39,7 +37,6 @@ const AboutSection: React.FC = () => {
       </div>
 
       {/* Mission & Vision Section with Image Grid */}
-
       <div className="max-w-7xl w-full grid md:grid-cols-3 gap-6">
         {/* Mission Statement */}
         <div className="md:col-span-2 space-y-4">
@@ -54,11 +51,9 @@ const AboutSection: React.FC = () => {
         {/* Image 1 */}
         <div className="md:row-span-2 rounded-xl overflow-hidden shadow-md">
           <img
-
             src="/images/farm-worker-happy-see-non-gmo-vegetable-plantation-crop-yields-organically-growing-fresh-healthy-way-without-using-herbicides-eco-friendly-bio-agricultural-greenhouse-farm.jpg"
             alt="Empowered farmer"
-
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            className="w-full h-auto md:h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
           />
         </div>
@@ -68,23 +63,20 @@ const AboutSection: React.FC = () => {
           <img
             src="/images/strawberry-260688_1280.jpg"
             alt="Farming Process"
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            className="w-full h-auto md:h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
           />
         </div>
 
         {/* Image 3 */}
-        <div className="md:row-span-1 rounded-xl overflow-hidden shadow-md h-48">
+        <div className="md:row-span-1 rounded-xl overflow-hidden shadow-md h-auto">
           <img
-
             src="/images/rice-field-5706429_1280.jpg"
             alt="Rice Field"
-
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            className="w-full h-auto md:h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
           />
         </div>
-
 
         {/* What We Do Section */}
         <div className="md:col-span-2 space-y-4">
@@ -92,14 +84,14 @@ const AboutSection: React.FC = () => {
             What We Do
           </h2>
           <p className="text-gray-700 leading-relaxed font-semibold">
-            We help farmers boost productivity and sustainability through smart irrigation, precision farming, and access to modern tools. Our goal is to make agriculture more efficient, eco-friendly, and rewarding.
-
+            We help farmers boost productivity and sustainability through smart
+            irrigation, precision farming, and access to modern tools. Our goal
+            is to make agriculture more efficient, eco-friendly, and rewarding.
           </p>
         </div>
       </div>
 
       {/* Vision Statement with Horizontal Image */}
-
       <div className="mt-14 max-w-7xl w-full flex flex-col md:flex-row items-start gap-6">
         <div className="md:w-2/3 space-y-4">
           <h2 className="text-3xl font-extrabold text-green-400 tracking-tight">
@@ -112,11 +104,9 @@ const AboutSection: React.FC = () => {
 
         <div className="md:w-1/3 rounded-xl overflow-hidden shadow-md">
           <img
-
             src="/images/rice-7176354_1280.jpg"
-
             alt="Sustainable Farming Practices"
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            className="w-full h-auto md:h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
           />
         </div>

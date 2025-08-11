@@ -4,7 +4,7 @@ import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 export default function HeroSection() {
   const images = [
     "/images/slide1.jpg",  
-    "/images/farmboy3.jpg",
+    "/images/farmboy3.avif",
     "/images/slide33.jpg",
     "/images/slide4.jpg",
   ];
@@ -100,7 +100,7 @@ export default function HeroSection() {
         <div className="w-full md:w-[45%] flex justify-center md:justify-end mt-10 md:mt-0">
           <div className="w-full sm:w-[600px] h-[350px] sm:h-[400px] rounded-xl overflow-hidden shadow-xl">
             <img
-              src="/images/farmer3.jpg"
+              src="/images/farmer3.avif"
               alt="Farmer"
               className="w-full h-full object-cover"
             />
