@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 import { Navbar } from "./components/Navbar/Navbar";
 import "./index.css";
 import FarmingInnovationSection from "./components/FarmingInnovationSection";
+import Footer from './components/Footer';
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ContactForm from "./components/ContactForm";
 import Prompt from "./components/prompt";
+import OurServices from "./components/Ourservices";
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -21,7 +23,9 @@ const HomePage: React.FC = () => {
       <HeroSection />
       <FarmingInnovationSection />
       <AboutSection />
+      <OurServices />
       <ContactForm />
+      <Footer />
     </>
   );
 };
