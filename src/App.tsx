@@ -4,7 +4,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import "./index.css";
 import FarmingInnovationSection from "./components/FarmingInnovationSection";
 import Footer from './components/Footer';
-import Ourservices from './components/OurServices';
+// import Ourservices from './components/OurServices';
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ContactForm from "./components/ContactForm";
@@ -24,6 +24,7 @@ const HomePage: React.FC = () => {
       <FarmingInnovationSection />
       <AboutSection />
       <ContactForm />
+      <Footer />
     </>
   );
 };
