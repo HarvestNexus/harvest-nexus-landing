@@ -27,9 +27,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
 
      
           <div className="hidden lg:flex space-x-8">
-            <NavLink className="text-gray-800 hover:text-green-400" href="/" label="Home" />
-            <NavLink className="text-gray-800 hover:text-green-400" href="/about" label="About" />
-            <NavLink className="text-gray-800 hover:text-green-400" href="/services" label="Service" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="#home" label="Home" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="#about" label="About" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="#services" label="Service" />
             <NavLink className="text-gray-800 hover:text-green-400" href="#contact" label="Contact Us" />
           </div>
 
@@ -68,19 +68,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
       {isMobileOpen && (
         <div className="lg:hidden px-4 pt-2 pb-4 bg-white shadow-md space-y-3">
           <NavLink
-            href="/"
+            href="#home"
             label="Home"
             onClick={closeMenu}
             className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
           />
           <NavLink
-            href="/about"
+            href="#about"
             label="About"
             onClick={closeMenu}
             className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
           />
           <NavLink
-            href="/services"
+            href="#services"
             label="Service"
             onClick={closeMenu}
             className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
@@ -101,7 +101,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
               </svg>
             </div>
-            <span className="font-bold text-sm">+23481-21766402</span>
+            <span className="font-bold text-sm">+234-8065645754</span>
           </div>
 
           <button

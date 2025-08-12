@@ -19,22 +19,63 @@ export default function ContactForm() {
     message: ""
   });
 
+  const [responseMessage, setResponseMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("Submitted data:", formData);
+    setIsSubmitting(true);
+    setResponseMessage("");
+
+    try {
+      const payload = {
+        name: formData.Name,
+        email: formData.email,
+        phone: formData.phone,
+        address: formData.Address,
+        message: formData.message,
+      };
+
+      const res = await fetch(
+        "https://harvestnexus-backend.onrender.com/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const data = await res.json();
+      setResponseMessage(data.message || "Message sent successfully!");
+
+      if (res.ok) {
+        setFormData({
+          Name: "",
+          email: "",
+          phone: "",
+          Address: "",
+          message: "",
+        });
+      }
+    } catch (error) {
+      setResponseMessage("Failed to send message. Please try again later.");
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="min-h-screen bg-white px-4 py-12 flex flex-col items-center" id="contact">
-      <h1 className="text-4xl font-semibold mb-8 text-center">
-        Contact Us
-      </h1>
+      <h1 className="text-4xl font-semibold mb-8 text-center">Contact Us</h1>
 
       <div className="flex flex-col lg:flex-row gap-10 w-full max-w-6xl bg-gray-100 rounded-2xl shadow-md p-8">
         <div className="w-full lg:w-2/3">
@@ -91,10 +132,15 @@ export default function ContactForm() {
 
             <button
               type="submit"
-              className="px-6 py-2 bg-green-400 text-white rounded-full hover:bg-green-700 transition"
+              disabled={isSubmitting}
+              className="px-6 py-2 bg-green-400 text-white rounded-full hover:bg-green-700 transition disabled:opacity-50"
             >
-              Send Message
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
+
+            {responseMessage && (
+              <p className="text-sm mt- text-green-800">{responseMessage}</p>
+            )}
           </form>
         </div>
 
