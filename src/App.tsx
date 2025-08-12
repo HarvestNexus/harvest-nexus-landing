@@ -8,7 +8,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ContactForm from "./components/ContactForm";
 import Prompt from "./components/prompt";
-import OurServices from "./components/Ourservices";
+import OurServices from "./components/OurServices";
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
