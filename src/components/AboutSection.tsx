@@ -19,7 +19,7 @@ const AboutSection: React.FC = () => {
       className="min-h-screen bg-white py-8 px-4 md:px-12 flex flex-col items-center justify-center space-y-8"
       style={{ fontFamily: "'Noto Sans', sans-serif" }} id='about'
     >
-      <div className="w-full max-w-7xl flex flex-col items-start">
+      <div className="w-full max-w-7xl flex flex-col items-center">
         {/* Header */}
         <div className="flex flex-col items-start gap-4 mb-2">
           <img
