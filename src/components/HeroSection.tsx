@@ -79,7 +79,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="w-full min-h-screen font-['Noto_Sans'] bg-white text-black flex flex-col items-center justify-center px-4 sm:px-6 py-20 gap-20">
+    <section id="home" className=" w-full min-h-screen font-['Noto_Sans']  bg-white text-black flex flex-col items-center justify-center px-4 sm:px-6 py-20 gap-20">
      
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
         

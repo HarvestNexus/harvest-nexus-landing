@@ -27,9 +27,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
 
      
           <div className="hidden lg:flex space-x-8">
-            <NavLink className="text-gray-800 hover:text-green-400" href="/" label="Home" />
-            <NavLink className="text-gray-800 hover:text-green-400" href="/about" label="About" />
-            <NavLink className="text-gray-800 hover:text-green-400" href="/services" label="Service" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="#home" label="Home" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="#about" label="About" />
+            <NavLink className="text-gray-800 hover:text-green-400" href="#services" label="Service" />
             <NavLink className="text-gray-800 hover:text-green-400" href="#contact" label="Contact Us" />
           </div>
 
@@ -68,19 +68,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
       {isMobileOpen && (
         <div className="lg:hidden px-4 pt-2 pb-4 bg-white shadow-md space-y-3">
           <NavLink
-            href="/"
+            href="#home"
             label="Home"
             onClick={closeMenu}
             className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
           />
           <NavLink
-            href="/about"
+            href="#about"
             label="About"
             onClick={closeMenu}
             className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"
           />
           <NavLink
-            href="/services"
+            href="#services"
             label="Service"
             onClick={closeMenu}
             className="block text-gray-800 font-semibold px-3 py-2 rounded hover:bg-green-100 hover:text-green-600 transition"

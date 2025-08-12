@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       className="min-h-screen bg-white py-8 px-4 md:px-12 flex flex-col items-center justify-center space-y-8"
-      style={{ fontFamily: "'Noto Sans', sans-serif" }}
+      style={{ fontFamily: "'Noto Sans', sans-serif" }} id='about'
     >
       <div className="w-full max-w-7xl flex flex-col items-start">
         {/* Header */}
