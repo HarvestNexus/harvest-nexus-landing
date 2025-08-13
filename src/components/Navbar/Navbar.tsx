@@ -18,7 +18,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
        
           <div className="flex items-center space-x-2">
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.avif"
               alt="HarvestHub Logo"
               className="w-12 h-12 object-contain rounded-full"
             />

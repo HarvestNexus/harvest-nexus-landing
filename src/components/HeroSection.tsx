@@ -3,10 +3,10 @@ import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export default function HeroSection() {
   const images = [
-    "/images/slide1.jpg",  
+    "/images/slide1.avif",  
     "/images/farmboy3.avif",
-    "/images/slide33.jpg",
-    "/images/slide4.jpg",
+    "/images/slide33.avif",
+    "/images/slide4.avif",
   ];
 
   const constantText =
@@ -125,7 +125,7 @@ export default function HeroSection() {
               alt={`Slide ${index}`}
               className="w-full h-full object-fill"
             />
-            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 z-10 transition duration-500" />
+            <div className="absolute inset-0 group-hover:bg-black/40 z-10 transition duration-500" />
           </div>
         </div>
 
@@ -160,7 +160,7 @@ export default function HeroSection() {
               </div>
               <div className="flex flex-row md:flex-col items-center gap-4 text-2xl text-black mt-4">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/harvest-nexus/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-green-400 transition-colors duration-300"
@@ -168,7 +168,7 @@ export default function HeroSection() {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/harvestnexus"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-green-400 transition-colors duration-300"

@@ -6,35 +6,35 @@ import { FaCreditCard, FaCalendarAlt } from "react-icons/fa";
 const features = [
   {
     title: "Direct Farm-to-Buyer Sales",
-    icon: <MdAgriculture size={28} className="text-green-600" />,
+    icon: <MdAgriculture size={28} className="text-green-400" />,
     description:
       "Farmers sells produce directly to consumers, eliminating middlemen for better prices",
   },
   {
     title: "Real-Time Market Prices",
-    icon: <FaChartLine size={28} className="text-green-600" />,
+    icon: <FaChartLine size={28} className="text-green-400" />,
     description:
       "Live pricing data helps farmers and buyers negotiate fair deals",
   },
   {
     title: "Secure Payments",
-    icon: <FaCreditCard size={28} className="text-green-600" />,
+    icon: <FaCreditCard size={28} className="text-green-400" />,
     description: "Ecrow-based payments ensure safety for both parties",
   },
   {
     title: "Storage Provision",
-    icon: <MdWarehouse size={28} className="text-green-600" />,
+    icon: <MdWarehouse size={28} className="text-green-400" />,
     description:
       "Affordable, climate-controlled storage to keep your produce fresh until sold",
   },
   {
     title: "Logistic Support",
-    icon: <FaTruckFast size={28} className="text-green-600" />,
+    icon: <FaTruckFast size={28} className="text-green-400" />,
     description: "Integrated transport partners for reliable delivery",
   },
   {
     title: "Subscription Plans (Optional)",
-    icon: <FaCalendarAlt size={28} className="text-green-600" />,
+    icon: <FaCalendarAlt size={28} className="text-green-400" />,
     description: "Buyers can subscribe to regular harvest deliveries",
   },
 ];
@@ -51,20 +51,20 @@ const FarmingInnovationSection: React.FC = () => {
           <div className="w-full max-w-md space-y-2">
             <div className="overflow-hidden rounded-xl aspect-[4/3] relative">
               <img
-                src="./images/farmer.jpg"
+                src="./images/farmer.avif"
                 alt="Farmer"
                 className="absolute top-0 left-0 w-full h-[200%] object-cover"
               />
             </div>
             <div className="overflow-hidden rounded-xl aspect-[4/3] relative">
               <img
-                src="./images/farmer.jpg"
+                src="./images/farmer.avif"
                 alt="Farmer"
                 className="absolute bottom-0 left-0 w-full h-[200%] object-cover"
               />
               <div className="absolute bottom-4 left-3 right-3 bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-lg text-sm font-['Noto_Sans']">
                 Containing more than{" "}
-                <span className="text-green-600 font-bold">2 decades</span> of
+                <span className="text-green-400 font-bold">2 decades</span> of
                 farming experience
               </div>
             </div>

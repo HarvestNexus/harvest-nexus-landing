@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
           </button>
           <div className="flex space-x-6 mt-7 items-center">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/company/harvest-nexus/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Harvest Nexus LinkedIn"
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
               <img src={LinkedIn} alt="LinkedIn icon" width={20} height={20} />
             </a>
             <a
-              href="https://twitter.com/"
+              href="https://x.com/harvestnexus"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Harvest Nexus X (Twitter)"

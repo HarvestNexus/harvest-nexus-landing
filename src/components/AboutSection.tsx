@@ -21,15 +21,16 @@ const AboutSection: React.FC = () => {
     >
       <div className="w-full max-w-7xl flex flex-col items-center">
         {/* Header */}
-        <div className="flex flex-col items-start gap-4 mb-2">
-          <img
-            src="/images/logo.jpg"
-            alt="Harvest Nexus Logo"
-            className="w-12 h-12 rounded-full object-cover border-2 border-green-100"
-            loading="lazy"
-          />
-          <span className="text-xl font-semibold text-green-400">About Us</span>
-        </div>
+      <div className="flex flex-row items-center gap-4 mb-2">
+  <img
+    src="/images/logo.avif"
+    alt="Harvest Nexus Logo"
+    className="w-12 h-12 rounded-full object-cover border-2 border-green-100"
+    loading="lazy"
+  />
+  <span className="text-xl font-semibold text-green-400">About Us</span>
+</div>
+
         {/* Title */}
         <h1 className="text-4xl font-extrabold text-black mb-10 tracking-tight">
           Who We Are
@@ -51,7 +52,7 @@ const AboutSection: React.FC = () => {
         {/* Image 1 */}
         <div className="md:row-span-2 rounded-xl overflow-hidden shadow-md">
           <img
-            src="/images/farm-worker-happy-see-non-gmo-vegetable-plantation-crop-yields-organically-growing-fresh-healthy-way-without-using-herbicides-eco-friendly-bio-agricultural-greenhouse-farm.jpg"
+            src="/images/farm-worker-happy-see-non-gmo-vegetable-plantation-crop-yields-organically-growing-fresh-healthy-way-without-using-herbicides-eco-friendly-bio-agricultural-greenhouse-farm.avif"
             alt="Empowered farmer"
             className="w-full h-auto md:h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
@@ -61,7 +62,7 @@ const AboutSection: React.FC = () => {
         {/* Image 2 */}
         <div className="md:row-span-2 rounded-xl overflow-hidden shadow-md">
           <img
-            src="/images/strawberry-260688_1280.jpg"
+            src="/images/strawberry-260688_1280.avif"
             alt="Farming Process"
             className="w-full h-auto md:h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
@@ -71,7 +72,7 @@ const AboutSection: React.FC = () => {
         {/* Image 3 */}
         <div className="md:row-span-1 rounded-xl overflow-hidden shadow-md h-auto">
           <img
-            src="/images/rice-field-5706429_1280.jpg"
+            src="/images/rice-field-5706429_1280.avif"
             alt="Rice Field"
             className="w-full h-auto md:h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
@@ -104,7 +105,7 @@ const AboutSection: React.FC = () => {
 
         <div className="md:w-1/3 rounded-xl overflow-hidden shadow-md">
           <img
-            src="/images/rice-7176354_1280.jpg"
+            src="/images/rice-7176354_1280.avif"
             alt="Sustainable Farming Practices"
             className="w-full h-auto md:h-full object-cover transition-transform duration-300 hover:scale-105"
             loading="lazy"
