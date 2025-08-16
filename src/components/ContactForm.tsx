@@ -74,7 +74,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen bg-white px-4 py-12 flex flex-col items-center" id="contact">
+    <div className=" bg-white px-4 py-12 flex flex-col items-center" id="contact">
       <h1 className="text-4xl font-semibold mb-8 text-center">Contact Us</h1>
 
       <div className="flex flex-col lg:flex-row gap-10 w-full max-w-6xl bg-gray-100 rounded-2xl shadow-md p-8">

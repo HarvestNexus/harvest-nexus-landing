@@ -90,7 +90,7 @@ const OurServices: React.FC = () => {
   }, []);
 
   return (
-    <section className="services-section" id="services">
+    <section className="services-section " id="services">
       <div className="services-sec">
        
         <img

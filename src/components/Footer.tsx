@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-white border-t border-gray-300 px-6 sm:px-12 md:px-16 pt-6 pb-2 font-['Noto_Sans']">
+    <footer className="bg-white border-t border-gray-300 px-6 sm:px-12 md:px-16 pt-6 pb-2">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8 md:gap-16">
 
         {/* Left Section */}
@@ -27,11 +27,11 @@ const Footer: React.FC = () => {
               height={40}
               className="mr-3 rounded"
             />
-            <h1 className="font-semibold text-gray-900 text-lg sm:text-xl md:text-2xl tracking-tight">
+            <h1 className="font-semibold text-black text-lg sm:text-xl md:text-2xl tracking-tight">
               Harvest Nexus
             </h1>
           </div>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-md mb-6">
+          <p className="text-black text-sm sm:text-base leading-relaxed max-w-md mb-6">
             Let's grow prosperity, together. Join 20,000+ farmers and buyers trading directly – fairer deals, fresher harvests, smarter agriculture.
           </p>
           <button
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
 
         {/* Middle Section */}
         <nav className="md:w-1/4 min-w-[180px]">
-          <h3 className="font-semibold text-gray-900 text-lg sm:text-xl md:text-2xl mb-6 tracking-wide">
+          <h3 className="font-semibold text-black text-lg sm:text-xl md:text-2xl mb-6 tracking-wide">
             Navigation
           </h3>
           <ul className="space-y-4">
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
               <li key={href}>
                 <a
                   href={href}
-                  className="text-gray-700 text-base sm:text-lg md:text-lg hover:text-green-600 transition-colors"
+                  className="text-black text-base sm:text-lg md:text-lg hover:text-green-600 transition-colors"
                 >
                   {label}
                 </a>
@@ -88,27 +88,27 @@ const Footer: React.FC = () => {
 
         {/* Right Section */}
         <div className="md:w-1/3 min-w-[280px]">
-          <h3 className="font-semibold text-gray-900 text-lg sm:text-xl md:text-2xl mb-6 tracking-wide">
+          <h3 className="font-semibold text-black text-lg sm:text-xl md:text-2xl mb-6 tracking-wide">
             Contact
           </h3>
 
           <div className="flex items-start space-x-4 mb-5">
             <img src={Phone} alt="Phone icon" className="w-5 h-5 mt-1 flex-shrink-0" />
-            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+            <p className="text-black text-sm sm:text-base leading-relaxed">
               (+234) 80656457524, (+234) 9057304766
             </p>
           </div>
 
           <div className="flex items-start space-x-4 mb-5">
             <img src={Mail} alt="Mail icon" className="w-5 h-5 mt-1 flex-shrink-0" />
-            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+            <p className="text-black text-sm sm:text-base leading-relaxed">
               harvesthublimited@gmail.com
             </p>
           </div>
 
           <div className="flex items-start space-x-4">
             <img src={Location} alt="Location icon" className="w-5 h-5 mt-1 flex-shrink-0" />
-            <p className="text-gray-700 text-sm sm:text-base leading-relaxed max-w-md">
+            <p className="text-black text-sm sm:text-base leading-relaxed max-w-md">
               First Registrars and Investors Services, 2, Abebe Village Road, Iganmu, Surulere, Lagos
             </p>
           </div>

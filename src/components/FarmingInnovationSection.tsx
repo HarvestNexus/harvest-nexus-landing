@@ -62,7 +62,7 @@ const FarmingInnovationSection: React.FC = () => {
                 alt="Farmer"
                 className="absolute bottom-0 left-0 w-full h-[200%] object-cover"
               />
-              <div className="absolute bottom-4 left-3 right-3 bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-lg text-sm font-['Noto_Sans']">
+              <div className="absolute bottom-4 left-3 right-3 bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-lg text-sm ">
                 Containing more than{" "}
                 <span className="text-green-400 font-bold">2 decades</span> of
                 farming experience
@@ -74,7 +74,7 @@ const FarmingInnovationSection: React.FC = () => {
         {/* Right - Content and Features */}
         <div className="space-y-8">
           <div>
-            <h2 className="font-['Noto_Sans'] text-3xl md:text-4xl font-semibold text-black">
+            <h2 className="text-3xl md:text-4xl font-semibold text-black">
               Farmers Earn More. Buyers Get fresher. Everyone Wins
             </h2>
             <p className="mt-4 text-gray-600">{/*sub texts area*/}</p>
@@ -87,10 +87,10 @@ const FarmingInnovationSection: React.FC = () => {
                 className="flex flex-col rounded-xl items-start gap-2 px-2 py-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-secondary"
               >
                 <div className="text-green-400">{feature.icon}</div>
-                <h4 className="text-lg font-semibold text-gray-900 font-['Noto_Sans']">
+                <h4 className="text-lg font-semibold text-black ">
                   {feature.title}
                 </h4>
-                <p className="text-sm text-gray-600 font-['Noto_Sans']">
+                <p className="text-sm text-black ">
                   {feature.description}
                 </p>
               </div>

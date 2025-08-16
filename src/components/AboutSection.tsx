@@ -16,7 +16,7 @@ const missionStatements = [
 const AboutSection: React.FC = () => {
   return (
     <section
-      className="min-h-screen bg-white py-8 px-4 md:px-12 flex flex-col items-center justify-center space-y-8"
+      className=" bg-white py-8 px-4 md:px-12 flex flex-col items-center justify-center space-y-8"
       style={{ fontFamily: "'Noto Sans', sans-serif" }} id='about'
     >
       <div className="w-full max-w-7xl flex flex-col items-center">
@@ -41,10 +41,10 @@ const AboutSection: React.FC = () => {
       <div className="max-w-7xl w-full grid md:grid-cols-3 gap-6">
         {/* Mission Statement */}
         <div className="md:col-span-2 space-y-4">
-          <h2 className="text-3xl font-extrabold text-green-400 tracking-tight">
+          <h2 className="text-3xl  text-green-400 font-semibold tracking-tight">
             {missionStatements[0].title}
           </h2>
-          <p className="text-gray-700 leading-relaxed font-semibold">
+          <p className="text-black leading-relaxed ">
             {missionStatements[0].description}
           </p>
         </div>
@@ -84,7 +84,7 @@ const AboutSection: React.FC = () => {
           <h2 className="text-3xl font-extrabold text-green-400 tracking-tight">
             What We Do
           </h2>
-          <p className="text-gray-700 leading-relaxed font-semibold">
+          <p className="text-black leading-relaxed">
             We help farmers boost productivity and sustainability through smart
             irrigation, precision farming, and access to modern tools. Our goal
             is to make agriculture more efficient, eco-friendly, and rewarding.
@@ -98,7 +98,7 @@ const AboutSection: React.FC = () => {
           <h2 className="text-3xl font-extrabold text-green-400 tracking-tight">
             {missionStatements[1].title}
           </h2>
-          <p className="text-gray-700 leading-relaxed font-semibold">
+          <p className="text-black leading-relaxed ">
             {missionStatements[1].description}
           </p>
         </div>

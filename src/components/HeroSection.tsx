@@ -19,7 +19,6 @@ export default function HeroSection() {
   const fadeRef = useRef<HTMLDivElement | null>(null);
   const [animate, setAnimate] = useState(false);
 
-
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
@@ -27,13 +26,11 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, []);
 
- 
   useEffect(() => {
     const timeout = setTimeout(() => setAnimate(true), 300);
     return () => clearTimeout(timeout);
   }, []);
 
- 
   useEffect(() => {
     const timer = setTimeout(() => setTextVisible(true), 300);
     return () => clearTimeout(timer);
@@ -63,7 +60,6 @@ export default function HeroSection() {
       fadeRef.current.classList.add("translate-x-0");
       fadeRef.current.classList.remove("-translate-x-full", "translate-x-full");
 
-    
       fadeRef.current.classList.add("translate-x-full", "opacity-0");
       setTimeout(() => {
         setIndex((prev) => (prev - 1 + images.length) % images.length);
@@ -79,10 +75,13 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className=" w-full min-h-screen font-['Noto_Sans']  bg-white text-black flex flex-col items-center justify-center px-4 sm:px-6 py-20 gap-20">
-     
+    <section
+      id="home"
+      className="w-full   bg-white text-black flex flex-col items-center justify-center px-4 sm:px-6 py-20 gap-20"
+    >
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
         
+       
         <div className="w-full md:w-[55%] flex items-start justify-center md:justify-start flex-col text-left">
           <h1
             className={`text-[32px] sm:text-[48px] md:text-[60px] lg:text-[68px] font-semibold leading-snug tracking-tight text-black transition-all duration-700 ease-out transform ${
@@ -91,13 +90,13 @@ export default function HeroSection() {
           >
             {fullText}
           </h1>
-          <p className="text-lg sm:text-xl mt-6 text-black font-medium max-w-2xl">
+          <p className="text-lg sm:text-xl mt-6 text-black  max-w-2xl">
             {constantText}
           </p>
         </div>
 
       
-        <div className="w-full md:w-[45%] flex justify-center md:justify-end mt-10 md:mt-0">
+        <div className="w-full md:w-[45%] flex justify-center md:justify-end">
           <div className="w-full sm:w-[600px] h-[350px] sm:h-[400px] rounded-xl overflow-hidden shadow-xl">
             <img
               src="/images/farmer3.avif"
@@ -108,13 +107,14 @@ export default function HeroSection() {
         </div>
       </div>
 
-     
+  
       <div
         ref={slideRef}
         className={`relative w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-1000 ease-in-out ${
           animate ? "opacity-100" : "opacity-0"
         }`}
       >
+       
         <div className="group relative rounded-xl overflow-hidden shadow-2xl w-full min-w-[300px] max-w-[950px] h-[350px] sm:h-[500px] transition-all duration-700 flex items-center justify-center">
           <div
             ref={fadeRef}
@@ -131,7 +131,8 @@ export default function HeroSection() {
 
        
         <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center gap-10 mt-6">
+          <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center gap-10">
+            
            
             <div className="flex flex-row md:flex-col items-center space-x-6 md:space-x-0 md:space-y-6">
               <button
@@ -148,7 +149,7 @@ export default function HeroSection() {
               </button>
             </div>
 
-           
+          
             <div className="flex flex-col items-center md:ml-0 lg:ml-6">
               <div className="flex flex-row md:flex-col items-center font-bold text-sm leading-tight tracking-widest text-black">
                 {"FOLLOW US ON".split("").map((char, idx) => (

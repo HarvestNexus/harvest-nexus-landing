@@ -10,6 +10,7 @@ import ContactForm from "./components/ContactForm";
 import Prompt from "./components/prompt";
 import OurServices from "./components/OurServices";
 
+
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
   const handleJoinClick = () => {
