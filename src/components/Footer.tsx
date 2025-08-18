@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           </p>
           <button
             onClick={handleGetStartedClick}
-            className="self-start bg-green-400 hover:bg-green-600 text-white font-semibold rounded-full py-2 px-6 shadow-md transition duration-300 text-xs sm:text-sm md:text-base"
+            className="self-start bg-green-400 hover:bg-green-600 text-black font-semibold rounded-full py-2 px-6 shadow-md transition duration-300 text-xs sm:text-sm md:text-base"
             aria-label="Get started button"
           >
             Get started →
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
           <div className="flex items-start space-x-4 mb-5">
             <img src={Phone} alt="Phone icon" className="w-5 h-5 mt-1 flex-shrink-0" />
             <p className="text-black text-sm sm:text-base leading-relaxed">
-              (+234) 80656457524, (+234) 9057304766
+              (+234) 8065645754, (+234) 9057304766
             </p>
           </div>
 
