@@ -75,7 +75,7 @@ const FarmingInnovationSection: React.FC = () => {
         <div className="space-y-8">
           <div>
             <h2 className="font-['Noto_Sans'] text-3xl md:text-4xl font-semibold text-black">
-              Farmers Earn More. Buyers Get fresher. Everyone Wins
+              Farmers Earn More. Buyers Get Fresher. Everyone Wins
             </h2>
             <p className="mt-4 text-gray-600">{/*sub texts area*/}</p>
           </div>
