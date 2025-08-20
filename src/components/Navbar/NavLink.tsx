@@ -1,6 +1,5 @@
-// src/components/Navbar/NavLink.tsx
+
 import React from "react";
-import { Link } from "react-router-dom"; // Or use `next/link` for Next.js
 
 type NavLinkProps = {
   label: string;
