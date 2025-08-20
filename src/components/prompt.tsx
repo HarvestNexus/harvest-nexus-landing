@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Prompt: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -7,7 +8,7 @@ const Prompt: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setMessage(""); 
+    setMessage("");
 
     try {
       const res = await fetch(
@@ -45,10 +46,37 @@ const Prompt: React.FC = () => {
 
   return (
     <div className="min-h-screen w-full bg-white relative flex items-center justify-center overflow-hidden font-noto">
+      {/* Home Button */}
+     <div className="absolute top-4 left-4 md:top-6 md:left-10 lg:left-20 z-20">
+  <Link
+    to="/"
+    className="flex items-center space-x-2 text-green-500 hover:text-green-600"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6 md:h-7 md:w-7"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3 9.75L12 4l9 5.75M4.5 10.5v8.25a1.5 1.5 0 001.5 1.5h12a1.5 1.5 0 001.5-1.5V10.5"
+      />
+    </svg>
+    <span className="hidden sm:inline text-sm md:text-base font-medium">Home</span>
+  </Link>
+</div>
+
+
+      {/* Background */}
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-green-400 z-0"></div>
 
+      {/* Card Section */}
       <div className="relative border-t-4 border-green-400 z-10 flex flex-col md:flex-row items-center justify-center p-10 md:p-24 bg-green-100 rounded-xl shadow-2xl max-w-7xl w-full mx-4 md:mx-auto">
-        
+        {/* Image Section */}
         <div className="mb-8 md:mb-0 md:mr-14">
           <div className="w-72 h-90 rounded-2xl overflow-hidden flex items-center justify-center bg-white">
             <img
@@ -59,16 +87,18 @@ const Prompt: React.FC = () => {
           </div>
         </div>
 
+        {/* Text + Form Section */}
         <div className="text-center md:text-left space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold text-black leading-snug">
-            Join Our Early Access<br />
+            Join Our Early Access <br />
             <span className="text-green-400 text-lg">
               Shape the future of Farming!
             </span>
           </h2>
           <p className="text-gray-600 max-w-md text-sm">
-            Be the first to experience Harvest Nexus, the revolutionary farm-to-buyer platform.
-            Sign up now for exclusive early access, fresh foods, affordable pricing, and swift deliveries.
+            Be the first to experience Harvest Nexus, the revolutionary
+            farm-to-buyer platform. Sign up now for exclusive early access,
+            fresh foods, affordable pricing, and swift deliveries.
           </p>
 
           <form
