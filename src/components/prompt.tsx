@@ -45,14 +45,14 @@ const Prompt: React.FC = () => {
 
   return (
     <div className="min-h-screen w-full bg-white relative flex items-center justify-center overflow-hidden font-noto">
-      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-green-600 z-0"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-green-400 z-0"></div>
 
-      <div className="relative border-t-4 border-green-600 z-10 flex flex-col md:flex-row items-center justify-center p-10 md:p-24 bg-green-100 rounded-xl shadow-2xl max-w-7xl w-full mx-4 md:mx-auto">
+      <div className="relative border-t-4 border-green-400 z-10 flex flex-col md:flex-row items-center justify-center p-10 md:p-24 bg-green-100 rounded-xl shadow-2xl max-w-7xl w-full mx-4 md:mx-auto">
         
         <div className="mb-8 md:mb-0 md:mr-14">
           <div className="w-72 h-90 rounded-2xl overflow-hidden flex items-center justify-center bg-white">
             <img
-              src="/images/PromptFarmer.jpg"
+              src="/images/PromptFarmer.avif"
               alt="Farmer with vegetables"
               className="h-full w-full object-cover"
             />
@@ -62,7 +62,7 @@ const Prompt: React.FC = () => {
         <div className="text-center md:text-left space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold text-black leading-snug">
             Join Our Early Access<br />
-            <span className="text-green-600 text-lg">
+            <span className="text-green-400 text-lg">
               Shape the future of Farming!
             </span>
           </h2>
@@ -113,7 +113,7 @@ const Prompt: React.FC = () => {
             {message && (
               <p
                 className={`text-sm ${
-                  messageType === "success" ? "text-green-600" : "text-red-500"
+                  messageType === "success" ? "text-green-400" : "text-red-400"
                 }`}
               >
                 {message}
