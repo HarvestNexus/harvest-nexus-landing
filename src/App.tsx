@@ -1,7 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import { Navbar } from "./components/Navbar/Navbar";
+import "./index.css";
+import Footer from './components/Footer';
+import Prompt from "./components/prompt";
 
 
 
@@ -13,11 +16,6 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Navbar onJoinClick={handleJoinClick} />
-      <HeroSection />
-      <FarmingInnovationSection />
-      <AboutSection />
-      <OurServices />
-      <ContactForm />
       <Footer />
     </>
   );
