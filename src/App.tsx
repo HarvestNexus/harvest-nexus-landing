@@ -3,17 +3,35 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 
+
+
+const HomePage: React.FC = () => {
+  const navigate = useNavigate();
+  const handleJoinClick = () => {
+    navigate("/Prompt");
+  };
+  return (
+    <>
+      <Navbar onJoinClick={handleJoinClick} />
+      <HeroSection />
+      <FarmingInnovationSection />
+      <AboutSection />
+      <OurServices />
+      <ContactForm />
+      <Footer />
+    </>
+  );
+};
 const App: React.FC = () => {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* placeholders for now */}
-        <Route path="/dashboard" element={<h1 className="p-6">Dashboard Page</h1>} />
-        <Route path="/login" element={<h1 className="p-6">Login Page</h1>} />
-        <Route path="/signup" element={<h1 className="p-6">Signup Page</h1>} />
-      </Routes>
+      <div className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Prompt" element={<><Navbar onJoinClick={() => {}} /><Prompt /></>} />
+        </Routes>
+      </div>
+
     </Router>
   );
 };
