@@ -113,7 +113,7 @@ const Prompt: React.FC = () => {
             {message && (
               <p
                 className={`text-sm ${
-                  messageType === "success" ? "text-green-400" : "text-red-500"
+                  messageType === "success" ? "text-green-400" : "text-red-400"
                 }`}
               >
                 {message}
