@@ -1,0 +1,179 @@
+.services-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.services-section *:not(.services-subtitle) {
+  color: black !important;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.services-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.services-subtitle {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0;
+  color: #4ade80;
+}
+
+.services-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.services-desc {
+  font-size: 1rem;
+  color: black;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.services-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.services-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.service-card {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 12px;
+  min-width: 30vw;
+  min-height: 45vh;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-img {
+  width: 100%;
+  height: auto; 
+  max-height: 20em; 
+  object-fit: contain; 
+  display: block;
+}
+
+.service-content {
+  position: relative;
+  text-align: center;
+  padding: 2.5rem 1.2rem 1.2rem;
+  color: black;
+}
+
+.service-icon {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: #4ade80;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.service-icon img {
+  width: 22px;
+  height: 22px;
+  z-index: 1000;
+}
+
+.service-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: black;
+}
+
+.service-content p {
+  font-size: 0.9rem;
+  color: black;
+  line-height: 1.4;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  color: black;
+}
+
+.carousel-controls button {
+  background: #4ade80;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.carousel-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.carousel-controls button:hover:not(:disabled) {
+  background: #128a3d;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  background: #4ade80;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    min-width: 85vw;
+    min-height: auto;
+  }
+
+  .service-img {
+    max-height: 16em;
+  }
+}
